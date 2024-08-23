@@ -21,7 +21,8 @@
           colors: {
             primary: 'rgb(171, 239, 95)',
             secondary: 'rgba(171, 239, 95, 0.5)',
-            footer_clr: 'rgb(28, 28, 28)'
+            main: 'rgb(244, 244, 244)',
+            footer_clr: 'rgb(28, 28, 28)',
           },
           fontFamily: {
             manrope: "Manrope",
@@ -79,7 +80,7 @@
     <div class="text-center">
       <h1 class="text-3xl lg:text-6xl font-bold text-slate-900 mb-6">A barn house of this design has a <br> striking appearance</h1>
       <p class="text-slate-700 text-sm lg:text-base font-medium mb-8 lg:mx-24">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-     <div class="mb-6">
+     <div class="mb-12">
       <button class="mx-auto w-full lg:w-auto flex bg-secondary text-xl rounded-full font-bold text-slate-900 items-center justify-center gap-1 px-5 py-3">
         <div>View Details</div>
         <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
@@ -90,8 +91,49 @@
     </div>
    </section>
  </header>
- <main>
+ <main class="bg-main">
+  <!-- About us -->
+   <section class="lg:pt-[72px] pt-6 relative">
+    <div class="absolute hidden lg:block top-2 left-2">
+      <img class="border-2 py-4 border-dashed border-slate-300" src="images/Vector.png" alt="">
+    </div>
+    <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+      <div class="space-y-4">
+        <div class="text-center lg:text-left">
+          <button class="mx-auto lg:mx-0 flex bg-white rounded-full font-bold text-slate-700 items-center justify-center gap-1 px-4 py-2">
+            <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+              <i class="fa-solid fa-arrow-right text-xl"></i>
+            </div>
+            <div>About Us</div>
+          </button>  
+          <h4 class="text-2xl lg:text-5xl mt-4 font-bold">We design thoughtful,<br> liveable spaces</h4>
+          <p class="font-medium text-slate-700 mt-6">Dedicated to innovative design and sustainable solutions, we create spaces that inspire and elevate.Transforming visions into reality with expertise.</p>
+        </div>
+        <div class="flex gap-4 items-start lg:items-center rounded-xl bg-white p-6">
+          <div class="w-1/6">
+            <img class="w-full" src="images/commercial.png" alt="">
+          </div>
+          <div class="w-4/5">
+            <h4 class="font-extrabold text-xl text-slate-700">Commercial</h4>
+            <p class="font-medium text-slate-500">Specializing in commercial spaces, we blend functionality with aesthetic appeal to create dynamic environments that drive business success.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start lg:items-center rounded-xl bg-white p-6">
+          <div class="w-1/6">
+            <img class="w-full" src="images/residential.png" alt="">
+          </div>
+          <div class="w-4/5">
+            <h4 class="font-extrabold text-xl text-slate-700">Residential</h4>
+            <p class="font-medium text-slate-500">Designing personalized residential spaces that reflect your lifestyle, we create comfortable, functional homes where elegance and warmth come together.</p>
+          </div>
+        </div>
 
+      </div>
+      <div>
+        <img src="images/Rectangle.png" alt="">
+      </div>
+    </div>
+   </section>
  </main>
  <footer>
 
