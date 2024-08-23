@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture Website</title>
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwid and daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind css configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(171, 239, 95)',
+            secondary: 'rgba(171, 239, 95, 0.5)',
+            footer_clr: 'rgb(28, 28, 28)'
+          },
+          fontFamily: {
+            manrope: "Manrope",
+          },
+          backgroundImage: {
+            header: 'linear-gradient(0deg, #ffffff, rgba(255, 255, 255, 0) 100%)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-manrope">
+ <header class="bg-header mt-10">
+  <nav class="w-11/12 mx-auto flex justify-between items-center">
+    <div class="flex items-center gap-1">
+      <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+        <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+      </div>
+      <p class="text-slate-900 font-bold text-3xl">Rinterio</p>
+    </div>
+     <ul class="lg:flex justify-between gap-6 items-center hidden">
+      <li class="text-slate-700 font-bold"><a href="">Home</a></li>
+      <li class="text-slate-500"><a href="">Services</a></li>
+      <li class="text-slate-500"><a href="">Portfolio</a></li>
+      <li class="text-slate-500"><a href="">Blogs</a></li>
+      <li class="text-slate-500"><a href="">Contact Us</a></li>
+    </ul>
+    <div class="flex items-center justify-end">
+      <div class="lg:flex hidden w-12 h-12 items-center justify-center text-slate-500 rounded-full bg-white">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="lg:flex hidden w-12 h-12 items-center justify-center text-slate-500 rounded-full bg-white">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div>
+        <button class="lg:flex hidden bg-primary text-xl rounded-full font-bold text-slate-900 items-center gap-1 px-5 py-3">
+          <div>Book Consult</div>
+          <div class="w-8 h-8 bg-slate-900 text-white rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+          </div>
+        </button> 
+      </div>
+      <div class="h-12 w-12 lg:hidden bg-white text-slate-500 rounded-full flex items-center justify-center">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </nav>
+ </header>
+ <main>
+
+ </main>
+ <footer>
+
+ </footer>
+</body>
+</html>
